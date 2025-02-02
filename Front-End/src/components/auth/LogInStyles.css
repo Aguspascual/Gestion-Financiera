@@ -1,0 +1,113 @@
+/* Contenedor principal */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #1a1f2e;
+    padding: 1rem;
+}
+
+/* Caja de formulario */
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+/* Títulos */
+.login-box h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+/* Inputs */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: #0061ff;
+}
+
+/* Botones */
+button, .btnIniciar {
+    width: 100%;
+    padding: 12px;
+    background: #0061ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Evita que los botones tengan tamaño diferente */
+button[type="submit"], .btnIniciar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Ajuste específico para "Iniciar Sesión" */
+.btnIniciar {
+    background: #28a745;
+}
+
+.btnIniciar:hover {
+    background: #218838;
+}
+
+/* Hover para el botón "Registrar" */
+button:hover {
+    background: #0052d6;
+}
+
+/* Links del formulario */
+.form-links {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+
+.form-links a {
+    color: #0061ff;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.form-links a:hover {
+    color: #0052d6;
+    text-decoration: underline;
+}

@@ -1,0 +1,114 @@
+/* Estilos generales */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  padding: 0 10px; /* Agregado para asegurar que no se salga del borde */
+}
+
+/* Caja del login */
+.login-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Ajustamos el tamaño máximo */
+  text-align: center;
+}
+
+/* Campos de entrada */
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+}
+
+/* Efecto en el foco */
+.form-group input:focus {
+  border-color: #007bff;
+}
+
+/* Botón */
+.btnIniciar {
+  width: 100%; /* Asegura que ocupe el ancho completo */
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center; /* Centra el texto */
+  display: block; /* Se asegura de que no quede alineado como inline-block */
+  margin: 10px 0; /* Añadimos un margen para separar del contenido */
+}
+
+.btnIniciar:hover {
+  background-color: #0056b3;
+}
+
+/* Enlaces */
+a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividad */
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+  .login-box {
+    padding: 20px; /* Reduce el padding en dispositivos móviles */
+    width: 100%; /* Asegura que ocupe el 100% del ancho en móviles */
+    max-width: none; /* Elimina el límite de ancho máximo */
+  }
+
+  .form-group input {
+    font-size: 14px; /* Disminuye el tamaño de los inputs en pantallas pequeñas */
+    padding: 8px; /* Reduce el padding de los inputs */
+  }
+
+  .btnIniciar {
+    font-size: 16px; /* Reduce el tamaño de fuente del botón */
+    padding: 12px; /* Aumenta un poco el padding del botón para mejor usabilidad */
+  }
+
+  /* Ajustamos los enlaces */
+  a {
+    font-size: 12px; /* Reduce el tamaño de fuente de los enlaces */
+  }
+}
+
+/* Para pantallas medianas (tabletas) */
+@media (max-width: 768px) {
+  .login-box {
+    width: 90%;
+    max-width: 380px; /* Ajusta el ancho máximo para pantallas medianas */
+  }
+
+  .btnIniciar {
+    font-size: 16px;
+  }
+
+  .form-group input {
+    font-size: 15px;
+  }
+
+  a {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,125 @@
+.footer {
+    background-color: #1a1f2e;
+    color: #a0aec0;
+    padding: 48px 0;
+    text-align: center;
+    margin-top: auto;
+    position: relative;
+  }
+  
+  .footer-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+  
+  .footer-sections {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .footer-section h3 {
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
+  
+  .contact-item a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .contact-item a:hover {
+    color: white;
+  }
+  
+  .quick-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .quick-links li {
+    margin-bottom: 8px;
+  }
+  
+  .quick-links a {
+    color: #a0aec0;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  .quick-links a:hover {
+    color: white;
+  }
+  
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .newsletter-input {
+    padding: 8px 16px;
+    border-radius: 4px;
+    background-color: #2d3748;
+    border: 1px solid #4a5568;
+    color: white;
+    width: 100%;
+  }
+  
+  .newsletter-input:focus {
+    outline: none;
+    border-color: #4299e1;
+}
+  
+.subscribe-button {
+    background-color: #4299e1;
+    color: white;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.subscribe-button:hover {
+    background-color: #3182ce;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 32px;
+    border-top: 1px solid #2d3748;
+    font-size: 0.875rem;
+    background-color: #1a1f2e;
+    color: white;
+}
+
+@media (min-width: 768px) {
+  .footer-sections {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

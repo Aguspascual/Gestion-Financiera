@@ -1,0 +1,146 @@
+/* Estilos mejorados para el Navbar */
+
+.NavbarItems {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+  width: 95%;
+  height: 80px;
+  border-radius: 13px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.navbar-logo img {
+  height: 65px;
+  width: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+  white-space: nowrap;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-links:hover {
+  background-color: black;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+}
+
+.btnIniciar {
+  padding: 10px 20px;
+  background: #0061ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.btnIniciar:hover {
+  background: #004ecc;
+}
+
+.menu-icons {
+  display: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 850px) {
+  .NavbarItems {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 15px;
+  }
+
+  .menu-icons {
+      display: block;
+      position: absolute;
+      right: 20px;
+      top: 25px;
+  }
+
+  .nav-menu {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 80px;
+      left: -100%;
+      opacity: 0;
+      padding: 20px 0;
+      transition: 0.3s ease-in-out;
+      border-radius: 13px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-menu.active {
+      left: 0;
+      opacity: 1;
+  }
+
+  .nav-links {
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+  }
+
+  .nav-links:hover {
+      background: #f4f4f4;
+  }
+
+  .button-container {
+      display: none;
+  }
+
+  .nav-menu .btnIniciar {
+      display: block;
+      width: 80%;
+      margin: 10px auto;
+      text-align: center;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  .nav-menu .btnIniciar {
+      display: none !important;
+  }
+}
+
